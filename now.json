@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "name": "company-info-api",
+  "scope": "vtfk",
+  "alias": [
+    "companyinfo.api.vtfk.no"
+  ],
+  "env": {
+    "NODE_ENV": "production",
+    "PAPERTRAIL_HOSTNAME": "company-info",
+    "PAPERTRAIL_HOST": "@tfk-papertrail-host",
+    "PAPERTRAIL_PORT": "@tfk-papertrail-port"
+  },
+  "builds": [
+    { "src": "*.md", "use": "@now/md" }
+  ]
+}

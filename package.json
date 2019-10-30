@@ -1,0 +1,28 @@
+{
+  "name": "company-info-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && npm audit",
+    "deploy": "npm test && now --prod"
+  },
+  "keywords": [
+    "vtfk",
+    "company",
+    "info"
+  ],
+  "author": {
+    "name": "Mats Andreassen",
+    "email": "mats.andreassen@vtfk.no",
+    "url": "https://github.com/matsand"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@vtfk/company-info": "^0.2.0",
+    "@vtfk/logger": "^1.0.3"
+  },
+  "devDependencies": {
+    "standard": "^14.3.1"
+  }
+}
