@@ -1,4 +1,4 @@
-const getCompanyInfo = require('@vtfk/company-info')
+const { getCompanies } = require('@vtfk/company-info')
 
 module.exports = async (req, res) => {
   let filter = {}
@@ -6,6 +6,6 @@ module.exports = async (req, res) => {
     filter = JSON.parse(JSON.stringify(req.body))
   }
 
-  const companies = getCompanyInfo(filter)
+  const companies = getCompanies(filter)
   res.json(companies)
 }

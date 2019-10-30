@@ -9,6 +9,7 @@
     "NODE_ENV": "production"
   },
   "builds": [
-    { "src": "*.md", "use": "@now/md" }
+    { "src": "*.md", "use": "@now/md" },
+    { "src": "/api/*.js", "use": "@now/node" }
   ]
 }
